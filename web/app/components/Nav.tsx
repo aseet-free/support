@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const tabs = [
     { href: "/", label: "추천" },
     { href: "/price-level", label: "가격수준" },
-    { href: "/index", label: "지수" },
+    { href: "/gu-index", label: "지수" },
 ];
 
 export default function Nav() {
