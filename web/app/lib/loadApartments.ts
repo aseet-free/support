@@ -11,8 +11,9 @@ export async function loadApartmentsFromPublic(): Promise<any[]> {
             header: true,
             skipEmptyLines: true,
             complete: (results) => resolve(results.data as any[]),
-            error: (err) => reject(err),
+            error: (err: unknown) => reject(err),
         });
+
     });
 }
 

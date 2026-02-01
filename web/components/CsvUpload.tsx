@@ -29,10 +29,11 @@ export default function CsvUpload({ onDataLoaded }: Props) {
                 complete: (results: ParseResult<any>) => {
                     onDataLoaded(results.data as any[]);
                 },
-                error: (err) => {
+                error: (err: unknown) => {
                     console.error("CSV parse error:", err);
                     alert("CSV 파일을 읽는 중 오류가 발생했습니다.");
                 },
+
             });
         };
 
