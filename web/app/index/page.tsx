@@ -1,5 +1,5 @@
 "use client";
-
+<div style={{ color: "red" }}>INDEX PAGE</div>
 import { useEffect, useMemo, useState } from "react";
 import Nav from "../components/Nav";
 import Papa from "papaparse";
