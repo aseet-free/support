@@ -100,7 +100,8 @@ export default function IndexPage() {
                         header: true,
                         skipEmptyLines: true,
                         complete: (r) => resolve(r.data as Row[]),
-                        error: (e) => reject(e),
+                        error: (e: unknown) => reject(e),
+
                     });
                 });
 
